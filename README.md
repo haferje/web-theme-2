@@ -14,3 +14,4 @@ This was a concept design for a personal website, built in 2013, and inspired by
 
 - jQuery
 - Google Web Font
+- Reset CSS
