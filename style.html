@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
+	<head>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<title>Jason Hafer</title>
+		<meta name="author" content="Jason Hafer" />
+		<meta name="description" content="" />
+
+		<link rel="stylesheet" href="reset.css" type="text/css" media="screen, projection" />
+
+		<!-- Google Web Fonts -->
+		<link href='http://fonts.googleapis.com/css?family=Inconsolata' rel='stylesheet' type='text/css'>
+		<!-- Google CDN jQuery -->
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+	</head>
+	<body>
+
+
+<style type="text/css">
+	html { height:100%; }
+	body { height:100%; background:#252526; color: #b3b3b3; font-size: 9pt; font-family: "Arial", sans-serif; }
+	#wrapper { height:100%; }
+		#nav { height:100%; width:200px; display:inline; float:left; padding-top:30px; padding-left:40px; position:fixed; z-index:0; box-shadow:0 0 10px black; }
+			/*ul {list-style-type:;}*/
+			#nav li { list-style-type:none; }
+			#nav li a { padding-left: 4px; }
+			#nav li a.trigger:before { content: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAFCAYAAAB8ZH1oAAAACXBIWXMAAA7DAAAOwwHHb6hkAAAAB3RJTUUH3QUeAw07HLEjvQAAABl0RVh0Q29tbWVudABDcmVhdGVkIHdpdGggR0lNUFeBDhcAAAApSURBVAjXY2BgYGDYvHnzfwYCgAnGIKSYCZmDTzGKQl9fX0a89hPjRgA7Rw1PPVWCDwAAAABJRU5ErkJggg==); }/*"»  "; }*/
+			#nav li a.open:before { content: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAFCAYAAAB8ZH1oAAAACXBIWXMAAA7DAAAOwwHHb6hkAAAAB3RJTUUH3QUeAw8bFelh9wAAABl0RVh0Q29tbWVudABDcmVhdGVkIHdpdGggR0lNUFeBDhcAAABASURBVAjXrcqxDYAwDEXB58BeXsDb2nN5A/KpkAJKydUHC0nW3YMNqypJEmAAZnZFxPmNw92PJwFzl14yc/KHG8RnFIyIG7ebAAAAAElFTkSuQmCC); }/*"^  "; }*/
+		#contentwrapper { width:auto; margin-left:240px; min-height:100%; background:#2d2d30; box-shadow:none; }
+			#content { height:100%; max-width:600px; padding:50px; padding-top:35px; font-size:14px; }
+			#content h2 { color: #0097fb; text-shadow: 0px 0px 12px #20b7fb; border-bottom:1px solid #0097fb; }
+			#content h3 { color: #204d6d; text-shadow: 0px 0px 12px #305d7d; }
+		#copyright { z-index:-1; position:fixed; color: #9e9e9e; bottom:50px; right:50px; }
+		#nav .info { color: #9e9e9e; margin-top:100px; position:absolute; bottom:60px; }
+			.reverse { unicode-bidi:bidi-override; direction:rtl; }
+
+	a { text-decoration:none; color:#0097fb; }
+	a:hover { text-shadow: 0px 0px 6px #20b7fb; }
+	a:visited { color:#204d6d; }
+	li { margin-left:15px; }
+	h1 { font-size:26px; }
+	h2 { font-size:22px; }
+	h3 { font-size:18px; }
+
+	.vertical-table th, .vertical-table td { vertical-align: top; }
+	.vertical-table th { border-top: 2px solid #0097fb; color: #0097fb; text-align: left; }
+	.vertical-table td { border-top: 1px solid #204d6d; padding: 0px 10px; }
+
+	.horizontal-table th, .horizontal-table td { vertical-align: top; }
+	.horizontal-table th { border-top: 2px solid #0097fb; color: #0097fb; text-align: left; }
+	.horizontal-table td { border-top: 1px solid #204d6d; padding-right: 10px; }
+	.horizontal-table tr:hover td { background-color: #204d6d;}
+
+
+	#webfonttest { font-family: 'Inconsolata', sans-serif; }
+</style>
+
+
+<div id="wrapper">
+
+	<div id="nav">
+		<h1>Jason Hafer</h1>
+		<br>
+		<ul>
+			<li>
+				<a href="/projects" class="trigger">Projects</a>
+				<ul class="projects">
+					<li>
+						<a href="/android" class="trigger">Android</a>
+						<ul class="android">
+							<li><a href="#android">Monkey Full of Barrels</a></li>
+							<li><a href="">Tetris</a></li>
+						</ul>
+					</li>
+					<li>
+						<a href="/js" class="trigger">JS</a>
+						<ul class="js">
+							<li><a href="">Tetris AI</a></li>
+							<li><a href="">Scroller</a></li>
+							<li><a href="">RibbonBar</a></li>
+						</ul>
+					</li>
+					<li>
+						<a href="/webgl" class="trigger">WebGL</a>
+						<ul class="webgl">
+							<li><a href="">PS XMB Background</a></li>
+						</ul>
+					</li>
+					<li><a href="/arduino">Arduino</a></li>
+					<li><a href="/woodworking">Woodworking</a></li>
+					<li><a href="/other">Other</a></li>
+				</ul>
+			</li>
+			<li>
+				<a href="/blog" class="trigger">Blog</a>
+				<ul class="blog">
+					<li><a href="/projects/noir">Archive</a></li>
+				</ul>
+			</li>
+			<li><a href="">Photos</a></li>
+			<li><a href="">Resume</a></li>
+			<li><a href="">About</a></li>
+			<li><a href="">Contact</a></li>
+			<li>
+				<a href="/personal" class="trigger">Personal</a>
+				<ul class="personal">
+					<li><a href="/projects/noir">Songs</a></li>
+					<li><a href="/projects/korma">Notes</a></li>
+					<li><a href="/projects/cljs">Lists</a></li>
+					<li><a href="/projects/iwbyp">Gas</a></li>
+				</ul>
+			</li>
+		</ul>
+
+		<ul class="info">
+			<li>github: <a href="http://github.com/ibdknox">ibdknox</a></li>
+			<li>twitter: <a href="http://twitter.com/ibdknox">ibdknox</a></li>
+			<li>
+				<!-- html entities by http://www.zapyon.de/spam-me-not/ -->
+				<a href="&#x6d;&#97;&#105;&#x6c;&#x74;&#x6f;&#x3a;&#x68;&#x61;&#x66;&#x65;&#x72;&#106;&#x65;&#64;&#x67;&#109;&#97;&#x69;&#x6c;&#x2e;&#99;&#x6f;&#x6d;">
+					<!-- moc.liamg --><!-- @ejrefah -->
+					<bdo dir="rtl">&#x6d;&#111;&#99;&#46;&#x6c;&#x69;&#x61;&#109;&#x67;</bdo><span class="reverse">&#64;&#101;&#x6a;&#114;&#101;&#x66;&#x61;&#104;</span>
+				</a>
+			</li>
+			<li>&copy; 2013 Jason Hafer</li>
+		</ul>
+
+	</div>
+
+	<div id="contentwrapper">
+		<div id="content">
+
+			<table class="vertical-table">
+				<tr>
+					<th>Date Added:</th>
+					<td>2013.05.28 9:15pm</td>
+				</tr><tr>
+					<th>Last Edited:</th>
+					<td>2013.05.28 10:32pm</td>
+				</tr><tr>
+					<th>Editor:</th>
+					<td>Jason Hafer</td>
+				</tr><tr>
+					<th>Tags:</th>
+					<td>
+						code<br/>
+						javascript<br/>
+						oop
+					</td>
+				</tr>
+			</table>
+
+			<br/>
+
+			<table class="horizontal-table">
+				<tr>
+					<th>Heading One</th>
+					<th>Heading Two</th>
+					<th>Heading Three</th>
+				</tr><tr>
+					<td>Here is some sample data</td>
+					<td>Here is some sample data</td>
+					<td>Here is some sample data</td>
+				</tr><tr>
+					<td>Here is some sample data</td>
+					<td>Here is some sample data</td>
+					<td>Here is some sample data</td>
+				</tr><tr>
+					<td>Here is some sample data</td>
+					<td>Here is some sample data</td>
+					<td>Here is some sample data</td>
+				</tr><tr>
+					<td>Here is some sample data</td>
+					<td>Here is some sample data</td>
+					<td>Here is some sample data</td>
+				</tr><tr>
+					<td>Here is some sample data</td>
+					<td>Here is some sample data</td>
+					<td>Here is some sample data</td>
+				</tr>
+			</table>
+
+			<br/>
+
+			<h2>Heading #1</h2>
+			<br>
+			<h3>Heading #2</h3>
+			<br>
+			Content, content, content!
+			<br>
+			<br>
+			<div id="webfonttest">
+				<span style="font-size:20pt; font-weight:bold;">Google Web Font test (Inconsolata)</span>
+				<h2>Heading #1</h2>
+				<br>
+				<h3>Heading #2</h3>
+				<br>
+				Content, content, content!
+				<br>
+				https://www.google.com/fonts/
+			</div>
+			<br>
+			<div style="background-color:#222222;">asdf</div>
+			<div style="background-color:#1e1e1e;">asdf</div>
+			<div style="background-color:#18425f;">asdf</div>
+			<div style="background-color:#999999;">asdf</div>
+			<div style="background-color:#ffffff;">asdf</div>
+			<div style="background-color:#008eee;">asdf</div>
+			<div style="background-color:#434343;">asdf</div>
+			<br>
+			<div style="background-color:#2d2d30;">asdf **</div>
+			<div style="background-color:#252526;">asdf **</div>
+			<div style="background-color:#0097fb;">asdf **</div>
+			<div style="background-color:#000000;">asdf</div>
+			<div style="background-color:#204d6d;">asdf **</div>
+			<div style="background-color:#0084d7;">asdf</div>
+			<div style="background-color:#4b4b4d;">asdf</div>
+			<div style="background-color:#b3b3b3;">asdf **</div>
+			<div style="background-color:#626263;">asdf</div>
+			<div style="background-color:#7b9db3;">asdf</div>
+			<br>
+			<div style="background-color:#2d2d30;">asdf</div>
+			<div style="background-color:#1e1e1e;">asdf</div>
+			<div style="background-color:#007acc;">asdf</div>
+			<div style="background-color:#3b3b3f;">asdf</div>
+			<br>
+			<div style="background-color:#2d2d30;">asdf</div>
+			<div style="background-color:#252526;">asdf</div>
+			<div style="background-color:#0290ee;">asdf</div>
+			<div style="background-color:#b3b3b3;">asdf</div>
+			<div style="background-color:#4b4b4b;">asdf</div>
+			<div style="background-color:#78787a;">asdf</div>
+		</div>
+	</div>
+
+</div>
+
+
+<script type="text/javascript">
+/*
+	(function(window) {
+		if(window.location.pathname.indexOf("projects") > -1) {
+			$(".projects").show();
+		}
+		$(".trigger").bind("click", function(e) {
+			e.preventDefault();
+			$(this).next().slideToggle();
+		});
+	})(window);
+//*/
+
+$(window).ready(function(){
+
+	// navigation sections
+	$(".trigger").bind("click", function(e){
+		e.preventDefault();
+		$(this)
+			.toggleClass('open')
+			.next().slideToggle();
+	})
+		.next().hide();	// hide sub-items
+
+	// open any sections that occur in the url
+	$("a.trigger ~ ul").each(function(ul){
+		var ul = $(this);
+		//if (window.location.href.indexOf(ul.attr('class')) > -1) {
+		if ((new RegExp("\\b"+ul.attr('class')+"\\b")).test(window.location.href)) {
+			ul
+				.show()
+				.parents("ul").show();
+		}
+	});
+
+});
+</script>
+
+
+	</body>
+</html>

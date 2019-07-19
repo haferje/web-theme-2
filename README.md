@@ -4,12 +4,13 @@
 
 #### About
 
-This was a concept design for a personal website, built in 2012 and 2013.
+This was a concept design for a personal website, built in 2013, and inspired by the Visual Studio 2012 dark theme.
 
 #### Run
 
-1. Open `index.html` in a browser.
+1. Open `style.html` in a browser.
 
 #### Dependencies
 
-None
+- jQuery
+- Google Web Font
